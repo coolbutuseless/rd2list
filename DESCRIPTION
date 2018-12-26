@@ -1,0 +1,14 @@
+Package: rd2list
+Type: Package
+Title: Access R Documentation
+Version: 0.1.0
+Author: mikefc
+Maintainer: mikefc <mikefc@coolbutuseless.com>
+Description: Access R documentation from installed packages. Convert Rd format
+    to a structured, human-readable list.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat
