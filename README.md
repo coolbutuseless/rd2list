@@ -3,6 +3,13 @@
 
 # rd2list
 
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/coolbutuseless/rd2list?branch=master&svg=true)](https://ci.appveyor.com/project/coolbutuseless/rd2list)
+[![Travis build
+status](https://travis-ci.org/coolbutuseless/rd2list.svg?branch=master)](https://travis-ci.org/coolbutuseless/rd2list)
+[![Coverage
+status](https://codecov.io/gh/coolbutuseless/rd2list/branch/master/graph/badge.svg)](https://codecov.io/github/coolbutuseless/rd2list?branch=master)
+
 `rd2list` is a package for extracting R documentation into a structured,
 human-readable list. Use this package if you’ve ever wanted to get the
 help text for a function as a string.
