@@ -36,10 +36,13 @@ get_rd_doc <- function(function_name, package_name = NULL) {
   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   # Construct the basename of the actual Rd database file. Later on in
   # 'lazyLoadDBfetch' this will be suffixed with '.rdx' to point to
-  # the actual real file with documentation information
+  # the actual real file with documentation information.
+  # Since package_name could be NULL, parse out the package name from the
+  # help location.
   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  filebase <- file.path(dirname(help_location), package_name)
-  key      <- basename(help_location)
+  package_name <- basename(dirname(dirname(help_location)))
+  filebase     <- file.path(dirname(help_location), package_name)
+  key          <- basename(help_location)
 
   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   # The following code is a modified version of the body of
